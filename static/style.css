@@ -1,0 +1,153 @@
+body{
+
+    background:#111827;
+
+    color:white;
+
+    font-family:Arial;
+
+    margin:0;
+
+}
+
+.container{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:30px;
+
+}
+
+h1{
+
+    text-align:center;
+
+}
+
+.card{
+
+    background:#1f2937;
+
+    padding:20px;
+
+    border-radius:15px;
+
+}
+
+.inputs{
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+input,select{
+
+    padding:10px;
+
+    border-radius:8px;
+
+    border:none;
+
+    font-size:16px;
+
+}
+
+button{
+
+    padding:12px 30px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#1d4ed8;
+
+}
+
+.bulb-panel{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.bulb{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#444;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    transition:.3s;
+
+}
+
+.on{
+
+    background:#00ff66;
+
+    color:black;
+
+    box-shadow:0 0 40px #00ff66;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#2563eb;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:12px;
+
+    text-align:center;
+
+    background:#1f2937;
+
+    border-bottom:1px solid #333;
+
+}

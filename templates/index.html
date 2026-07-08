@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Smart Batch Scheduler</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>SMART BATCH SCHEDULER</h1>
+
+    <div class="card">
+
+        <div class="inputs">
+
+            <input
+                type="number"
+                id="year"
+                placeholder="Year"
+                value="2026">
+
+            <select id="month">
+
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7" selected>July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+
+            </select>
+
+            <input
+                type="text"
+                id="absent"
+                placeholder="Absent Dates (5,10,18)">
+
+            <button onclick="generateSchedule()">
+
+                Generate
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="bulb-panel">
+
+        <div class="bulb" id="b1">1</div>
+        <div class="bulb" id="b2">2</div>
+        <div class="bulb" id="b3">3</div>
+        <div class="bulb" id="b4">4</div>
+        <div class="bulb" id="b5">5</div>
+        <div class="bulb" id="b6">6</div>
+        <div class="bulb" id="b7">7</div>
+
+    </div>
+
+    <br>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>Date</th>
+            <th>Day</th>
+            <th>Batch</th>
+            <th>Status</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
